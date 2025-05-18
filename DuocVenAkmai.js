@@ -90,7 +90,7 @@ const cluster = require('cluster');
 const fs = require('fs');
 const os = require('os');
 const crypto = require('crypto');
-const colors = require('colors');
+
 const { Command } = require('commander');
 const socks = require('socks').SocksClient;
 // console.log(headerGenerator.getHeaders())
