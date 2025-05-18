@@ -69,7 +69,18 @@
 
     COMING SOON
 */
+console.clear();
+console.log(`
+██████  ██    ██  ██████   ██████     ██████  ███████ ██    ██ 
+██   ██ ██    ██ ██    ██ ██          ██   ██ ██      ██    ██ 
+██   ██ ██    ██ ██    ██ ██          ██   ██ █████   ██    ██ 
+██   ██ ██    ██ ██    ██ ██          ██   ██ ██       ██  ██  
+██████   ██████   ██████   ██████     ██████  ███████   ████   
 
+akamai Script - Developed by DuocDev
+Telegram: @DuocDev
+All Rights Reserved © 2025
+`.green.bold);
 const net = require('net');
 const tls = require('tls');
 const HPACK = require('hpack');
