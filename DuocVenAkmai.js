@@ -81,6 +81,7 @@ akamai Script - Developed by DuocDev
 Telegram: @DuocDev
 All Rights Reserved © 2025
 `.green.bold);
+const colors = require('colors');
 const net = require('net');
 const tls = require('tls');
 const HPACK = require('hpack');
