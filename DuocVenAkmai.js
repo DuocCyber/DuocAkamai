@@ -69,6 +69,10 @@
 
     COMING SOON
 */
+const cluster = require('cluster');
+
+if (cluster.isMaster) {
+    const workers = {};
 console.clear();
 const colors = require('colors');
 console.log(`
