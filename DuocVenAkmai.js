@@ -112,7 +112,7 @@ const options = new Command();
 options
     .option('-m, --method <method>', 'Request method <GET/POST/...>')
     .option('-u, --target <url>', 'Target URL <http/https>')
-    .option('-s, --time <seconds>', 'Duration of attack <seconds>', 999)     // Thời gian chạy tùy chỉnh
+    .option('-s, --time <seconds>', 'Duration of attack <seconds>', 999)     
     .option('-t, --threads <number>', 'Number of threads <int>', 4)
     .option('-r, --rate <rate>', 'Requests per second <int>', 60)
 
