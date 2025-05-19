@@ -176,7 +176,7 @@ if (!options.opts().method || !options.opts().target || !options.opts().proxy) {
 // const opts = options.opts();
 var reqmethod = opts.method || "GET";
 const target = opts.target;
-const time = opts.time || 120;
+const time = opts.time || 999;
 const threads = opts.threads;
 const ratelimit = opts.rate || 60;
 const proxyfile = opts.proxy;
