@@ -1029,8 +1029,8 @@ if (cluster.isMaster) {
                          ${'+888888'}${'8888888888888'.white.bold}${'8~~~~~'.grey.bold}
                           ${'~=88'}${'8888888888888888o'.white.bold}
                    ${'_=oooooooo'.yellow.bold}${'8888888888888888'.white.bold}${'88'.white}
-                    ${'_o88=8888='.yellow.bold}=~${'88888888'.yellow.bold}===8${'888_'.white}    ${'@benshii'.cyan.underline} # ${colors.dim.bold(new Date().toLocaleDateString("en"))}
-                    ${'~'.yellow.bold}   ${'=~~'.yellow.bold} ${'_o88888888='.yellow.bold}      ~~~      ${'JS PENGUIN'.bold} [${'v1.6'.underline}]
+                    ${'_o88=8888='.yellow.bold}=~${'88888888'.yellow.bold}===8${'888_'.white}    ${'@duocdev'.cyan.underline} # ${colors.dim.bold(new Date().toLocaleDateString("en"))}
+                    ${'~'.yellow.bold}   ${'=~~'.yellow.bold} ${'_o88888888='.yellow.bold}      ~~~      ${'JS DUOCDEV'.bold} [${'v1.6'.underline}]
                             ${'~ o8=~88=~'.yellow.bold}
 
 
