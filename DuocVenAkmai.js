@@ -1076,7 +1076,7 @@ if (cluster.isMaster) {
                 .map(([key, value]) => `${colors.bold(key)}: ${colors.underline(value)}`)
                 .join(', ');
 
-            console.log(`[${'JS/VENTOX'.magenta.bold}] | ${colors.bold('Time')}: [${colors.underline(time-count)}], ${colors.bold('Status')}: [${statusses}]`);
+            console.log(`[${'JS/DUOCDEV'.magenta.bold}] | ${colors.bold('Time')}: [${colors.underline(time-count)}], ${colors.bold('Status')}: [${statusses}]`);
             count++;
         }, 1000);
     }
