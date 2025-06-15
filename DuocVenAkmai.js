@@ -1,86 +1,3 @@
-/*
-    JS DuocDev 1.7
-
-    Node: v22.9.0
-    OS: Ubuntu 22.04
-    Setup: npm install hpack https commander colors
-
-    Date: 16 January, 2025
-
-    ———————————————————————————————————————————
-
-    Released by DuocDev 2XXX (killnet)
-
-    Thank you for purchasing this script.
-
-    1.1 CHANGELOG:
-    - Added redirect handler
-    - Added cookie parser
-    - Fixed update headers
-    - Added proxy conn stats
-    - Removed UAM option
-
-    1.2 CHANGELOG:
-    - Added config loading
-
-    1.3 CHANGELOG:
-    - Fixed randpath
-    - Socks4/5 support
-    - Optimised code
-    - Updated randrate
-
-    1.4 CHANGELOG:
-    - Faster requests
-    - New proxy class
-    - Extra headers
-    - New ratelimit handler
-    - Randomised tls settings
-    - Improved Fingerprints
-    - HTTP2 request queue
-
-    1.5 CHANGELOG:
-    - Bypasses Cloudflare HTTPD0S
-    - HTTP, HTTP/1.1 & HTTP/2 support
-    - Supports proxy authentication
-    - Compatible with browser scripts
-    - Optional TLS Chrome fingerprints
-    - Advanced randrate system option
-    - Optional randpath / ratelimit mode
-    - Supports socks4/5 & http/s proxies
-    - Updated random cookie system
-
-    1.6 CHANGELOG:
-    - New HTTPDD0S bypass
-    - Spoof Akamai fingerprints
-    - Fixed JA3 TLS fingerprints
-    - Updated ratelimit handler
-    - Added new cookie modes
-    - Updated ratelimit handler
-    - New cache bypass option
-    - Updated fingerprint option
-    - New and updated headers
-    - Updated randpath options
-    - Auto-detect proxy protocol
-    - Debug data frame option
-    - Updated rapidreset option
-    - Updated ciphers & sigalgs
-    - Adaptive http2 settings
-    - Fetch proxies from API
-
-    COMING SOON
-*/
-console.clear();
-console.log(`
-██████  ██    ██  ██████   ██████     ██████  ███████ ██    ██ 
-██   ██ ██    ██ ██    ██ ██          ██   ██ ██      ██    ██ 
-██   ██ ██    ██ ██    ██ ██          ██   ██ █████   ██    ██ 
-██   ██ ██    ██ ██    ██ ██          ██   ██ ██       ██  ██  
-██████   ██████   ██████   ██████     ██████  ███████   ████   
-
-akamai Script - Developed by DuocDev
-Telegram: @DuocDev
-All Rights Reserved © 2025
-`.green.bold);
 const net = require('net');
 const tls = require('tls');
 const HPACK = require('hpack');
@@ -1112,8 +1029,8 @@ if (cluster.isMaster) {
                          ${'+888888'}${'8888888888888'.white.bold}${'8~~~~~'.grey.bold}
                           ${'~=88'}${'8888888888888888o'.white.bold}
                    ${'_=oooooooo'.yellow.bold}${'8888888888888888'.white.bold}${'88'.white}
-                    ${'_o88=8888='.yellow.bold}=~${'88888888'.yellow.bold}===8${'888_'.white}    ${'@benshii'.cyan.underline} # ${colors.dim.bold(new Date().toLocaleDateString("en"))}
-                    ${'~'.yellow.bold}   ${'=~~'.yellow.bold} ${'_o88888888='.yellow.bold}      ~~~      ${'JS PENGUIN'.bold} [${'v1.6'.underline}]
+                    ${'_o88=8888='.yellow.bold}=~${'88888888'.yellow.bold}===8${'888_'.white}    ${'@duocdev'.cyan.underline} # ${colors.dim.bold(new Date().toLocaleDateString("en"))}
+                    ${'~'.yellow.bold}   ${'=~~'.yellow.bold} ${'_o88888888='.yellow.bold}      ~~~      ${'JS DUOCDEV'.bold} [${'v1.6'.underline}]
                             ${'~ o8=~88=~'.yellow.bold}
 
 
@@ -1159,7 +1076,7 @@ if (cluster.isMaster) {
                 .map(([key, value]) => `${colors.bold(key)}: ${colors.underline(value)}`)
                 .join(', ');
 
-            console.log(`[${'JS/VENTOX'.magenta.bold}] | ${colors.bold('Time')}: [${colors.underline(time-count)}], ${colors.bold('Status')}: [${statusses}]`);
+            console.log(`[${'JS/DUOCDEV'.magenta.bold}] | ${colors.bold('Time')}: [${colors.underline(time-count)}], ${colors.bold('Status')}: [${statusses}]`);
             count++;
         }, 1000);
     }
